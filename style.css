@@ -1,0 +1,111 @@
+/* Styles go here */
+
+* {
+    box-sizing: border-box;
+  }
+body {
+    font-family: Arial;    
+  }
+.menu {
+    float: right;
+}
+nav {
+    background-color: #333;    
+}
+nav a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.icon {
+    display: none;
+}
+.logo {
+    float: left;
+}
+
+nav::after{
+    content:"";
+    clear: both;
+    display: table;
+    }
+@media screen and (max-width: 600px) {
+  .menu a {
+      display: none;
+    }
+    .menu a.icon {
+      display: block;
+    }
+    .menu.responsive {
+        position: relative;
+        float: none;
+    }
+    .menu.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menu.responsive a:first-child {
+        clear: left;
+    }
+    .menu.responsive a {
+      display: block;
+    }
+  }
+
+  .projects h2{
+    color: gray;
+    border-bottom: 1px solid black;
+}
+
+
+  [class*="col-"] {
+      float: left;
+      padding: 10px;
+      width: 100%; /* Mobile First */
+  }
+  @media screen and (min-width:600px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  img {
+    width: 100%;
+  }
+
+button {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+  footer {
+    background-color: #333;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+footer a{
+    color: white;
+}
+.row::after{
+content:"";
+clear: both;
+display: table;
+}
